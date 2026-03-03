@@ -1,0 +1,52 @@
+/* ==========================================================================
+    CALL YOUR MOTHER THEME - DARK VERSION
+    Teal: #00acba  |  Pink/Purple: #ee84cf
+    ========================================================================== */
+
+/* Color codes used for the theme */
+$primary-color              : #00acba;   /* CYM teal */
+$accent-color               : #ee84cf;   /* CYM pink/purple */
+$gray                       : #7a8288;
+$dark-gray                  : mix(#000, $gray, 40%);
+$darker-gray                : mix(#000, $gray, 60%);
+$light-gray                 : mix(#fff, $gray, 50%);
+$lighter-gray               : mix(#fff, $gray, 90%);
+
+/* Color codes used for the site */
+$danger-color               : #ee5f5b;
+$info-color                 : #00acba;
+$notice-color               : #7a8288;
+$success-color              : #62c462;
+$warning-color              : #f89406;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* CYM dark theme for the site */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --global-base-color                 : #{$primary-color};
+        --global-bg-color                   : #1a1a2e;
+        --global-footer-bg-color            : #16213e;
+        --global-border-color               : #2a2a4a;
+        --global-dark-border-color          : #3a3a5a;
+        --global-code-background-color      : #16213e;
+        --global-code-text-color            : #{$primary-color};
+        --global-fig-caption-color          : #{$light-gray};
+        --global-link-color                 : #{$primary-color};
+        --global-link-color-hover           : #{$accent-color};
+        --global-link-color-visited         : mix(#fff, #{$primary-color}, 25%);
+        --global-masthead-link-color        : #e0e0e0;
+        --global-masthead-link-color-hover  : #{$primary-color};
+        --global-text-color                 : #e0e0e0;
+        --global-text-color-light           : #{$light-gray};
+        --global-thead-color                : #2a2a4a;
+    }
+}
