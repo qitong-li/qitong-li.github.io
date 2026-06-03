@@ -1,68 +1,54 @@
 ---
-layout: archive
+layout: page-minimal
 title: "CV"
 permalink: /cv/
-author_profile: true
 redirect_from:
   - /resume
 ---
 
-<!-- {% include base_path %} -->
----
 ## Education
 
-### Northwestern University  
-**M.S. in Computer Engineering (Thesis Track)**  
-Sept 2023 - June 2025  
+**Northwestern University**  
+M.S. in Computer Engineering (Thesis Track) &middot; Sept 2023 – June 2025  
 Advisor: Nivedita Arora  
-Focus: Embedded systems, physical computing, plant-environment sensing interfaces, Human-Computer Interaction, and STEM education
+Focus: Embedded systems, physical computing, plant-environment sensing, HCI, and STEM education
 
-### Beijing University of Technology  
-**B.S. in Computer Science**  
-Aug 2019 - June 2023  
+**Beijing University of Technology**  
+B.S. in Computer Science &middot; Aug 2019 – June 2023
 
-Relevant Coursework:  
-Data Structures, Algorithms, Machine Learning, Software Engineering, Operating Systems, Computer Architecture, Virtual Reality, VLSI IC Design
+Relevant coursework: Data Structures, Algorithms, Machine Learning, Software Engineering, Operating Systems, Computer Architecture, Virtual Reality, VLSI IC Design
 
 ---
 
 ## Research Experience
 
-### Research Assistant  
-**VAK Embodied Systems Lab, Northwestern University**  
-March 2024 - Present  
+**Research Assistant** &middot; VAK Embodied Systems Lab, Northwestern University &middot; March 2024 – Present
 
-#### PhytoBits: A Frugal Toolkit for Exploring Plant Gas Exchange  
-(Manuscript submitted to ACM IMWUT 2026)
+[Towards a Frugal Photosynthesis Sensing Toolkit for Data-Driven Plant Science Education and Exploration](https://arxiv.org/abs/2604.26305) — arXiv preprint
 
-- Designed a low-cost embedded sensing system integrating CO₂, humidity, and temperature sensors to observe stomatal rhythms and distinguish photosynthesis types (including CAM behavior).
+- Designed a low-cost embedded sensing system integrating CO₂, humidity, and temperature sensors to observe stomatal rhythms and distinguish photosynthesis types.
 - Built microcontroller-based data acquisition pipelines for continuous environmental monitoring and physiological signal visualization.
-- Collected and validated ground-truth physiological data using LI-COR gas-exchange measurements and quantitative assays (transcriptomics and acid titration workflows in progress).
+- Validated system against LI-COR gas-exchange measurements and quantitative assays.
 - Developed inquiry-based STEM curriculum modules integrating plant physiology, embedded systems, and computational thinking.
-- Conducted classroom pilot studies to evaluate learning outcomes and improve data literacy.
+- Conducted classroom pilot studies to evaluate learning outcomes and data literacy.
 
-#### OECT Sensors for In-Vivo Plant Monitoring
+*OECT Sensors for In-Vivo Plant Monitoring*
 
-- Developed hydrogel-based organic electrochemical transistor (OECT) sensors using PEDOT:PSS and freeze-thaw cryogels for bio-integrated sensing.
-- Established electrochemical characterization workflows using PalmSens systems, including linear voltammetry and impedance spectroscopy.
-- Investigated material-device interactions, hydration dynamics, and sensor stability for long-term ecological deployments.
+- Developed hydrogel-based organic electrochemical transistor (OECT) sensors using PEDOT:PSS and freeze-thaw cryogels.
+- Established electrochemical characterization workflows using PalmSens systems (linear voltammetry, impedance spectroscopy).
+- Investigated hydration dynamics and sensor stability for long-term ecological deployments.
 
 ---
 
 ## Industry Experience
 
-### Software Engineer Intern  
-**HiRain Technologies - Beijing, China**  
-Mar 2023 - May 2023  
+**Software Engineer Intern** &middot; HiRain Technologies, Beijing &middot; Mar – May 2023
 
 - Optimized Linux real-time process performance for automotive control systems.
-- Monitored CPU occupancy and execution cycles to improve scheduling efficiency.
-- Built Python-based visualization tools to analyze performance bottlenecks.
+- Built Python-based visualization tools to analyze CPU scheduling and performance bottlenecks.
 - Authored technical documentation for system architecture and reliability analysis.
 
-### Software Development Engineer Intern  
-**Shanghai Zhizhen Junzhi Technology - Beijing, China**  
-Jul 2022 - Aug 2022  
+**Software Development Engineer Intern** &middot; Shanghai Zhizhen Junzhi Technology, Beijing &middot; Jul – Aug 2022
 
 - Developed large-scale online data collection and sentiment analysis pipelines.
 - Implemented web scraping automation using Selenium and WebDriver.
@@ -72,19 +58,15 @@ Jul 2022 - Aug 2022
 
 ## Projects
 
-### News2Video - AI-Driven Journalism Video Generation Platform  
-Jan 2024 - Mar 2024  
+**News2Video — AI-Driven Journalism Video Generation** &middot; Jan – Mar 2024
 
-- Built an end-to-end system combining Streamlit frontend, backend automation, and AI agents to convert news articles into short-form videos.
-- Integrated AI APIs for script generation, narration, and image synthesis.
-- Automated video editing using MoviePy and OpenCV.
+- Built an end-to-end system combining Streamlit frontend and AI agents to convert news articles into short-form videos.
+- Automated video editing using MoviePy and OpenCV; integrated APIs for script generation, narration, and image synthesis.
 
-### Smart Desk - Cross-Device Interaction Workspace  
-Feb 2022 - Jun 2022  
+**Smart Desk — Cross-Device Interaction Workspace** &middot; Feb – Jun 2022
 
 - Implemented face-recognition-based one-seat activation for cross-device continuity.
-- Developed an Android app enabling gesture-based interaction (mute, volume, media control).
-- Integrated computer vision (YOLOv5), mobile computing, and context-aware sensing.
+- Integrated computer vision (YOLOv5) and gesture-based mobile controls for context-aware sensing.
 
 ---
 
@@ -100,20 +82,16 @@ Feb 2022 - Jun 2022
 
 - Reviewer, ACM CHI (2026)
 - Reviewer, ACM TEI (2025)
-- Science Mentor, Pederson-McCormick Boys & Girls Club (2024-Present)
+- Science Mentor, Pederson-McCormick Boys & Girls Club (2024–Present)
 
 ---
 
 ## Technical Skills
 
-### Programming Languages
-Python, C++, C, Java, JavaScript, SQL, Rust, Verilog
+**Languages** &nbsp; Python, C++, C, Java, JavaScript, SQL, Rust, Verilog
 
-### ML / Frameworks
-PyTorch, TensorFlow, Keras, Spring Boot
+**ML / Frameworks** &nbsp; PyTorch, TensorFlow, Keras, Spring Boot
 
-### Tools & Systems
-Git, Docker, AWS, Linux, Android Studio
+**Tools** &nbsp; Git, Docker, AWS, Linux, Android Studio
 
-### Embedded & Hardware
-Arduino, ESP32, Micro:bit, Raspberry Pi, Cadence Virtuoso
+**Embedded & Hardware** &nbsp; Arduino, ESP32, Micro:bit, Raspberry Pi, Cadence Virtuoso

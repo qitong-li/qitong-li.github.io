@@ -1,20 +1,22 @@
-
+---
+---
+{% include base_path %}
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Qitong Li</title>
-  <meta name="description" content="Incoming PhD student in Computer Science at Northwestern University. My research interests lie in embedded sensing systems, biointegrated electronics, and ubiquitous computing, with applications in plant physiology and living systems.">
-  <meta name="author" content="Qitong Li">
-  <meta property="og:title" content="Qitong Li">
-  <meta property="og:description" content="Qitong Li's academic portfolio">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.author.bio | default: site.description }}">
+  <meta name="author" content="{{ site.author.name }}">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000">
+  <meta property="og:url" content="{{ site.url }}">
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png"/>
-  <link rel="icon" type="image/svg+xml" href="http://localhost:4000/images/favicon.svg"/>
-  <link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png" sizes="32x32"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>
+  <link rel="icon" type="image/svg+xml" href="{{ base_path }}/images/favicon.svg"/>
+  <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-32x32.png" sizes="32x32"/>
   <link rel="icon" href="/images/favicon.ico"/>
   <meta name="theme-color" content="#ffffff">
   <!-- Font Awesome -->
@@ -213,61 +215,24 @@
   <div class="mh-wrap">
 
     <header class="mh-header">
-      <h1 class="mh-name">Qitong Li</h1>
+      <h1 class="mh-name">{{ site.author.name }}</h1>
       <p class="mh-subtitle">Incoming Ph.D. Student &middot; Computer Science &middot; Northwestern University</p>
       <nav class="mh-nav">
-        <a href="http://localhost:4000/">Home</a>
+        <a href="{{ base_path }}/">Home</a>
         <a href="#publications">Publications</a>
-        <a href="http://localhost:4000/files/Research_CV.pdf" target="_blank">CV</a>
-        <a href="mailto:qitongli2025@u.northwestern.edu">Email</a>
-        <a href="https://github.com/qitong-li" target="_blank">GitHub</a>
+        <a href="{{ base_path }}/files/Research_CV.pdf" target="_blank">CV</a>
+        {% if site.author.email %}<a href="mailto:{{ site.author.email }}">Email</a>{% endif %}
+        {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}" target="_blank">GitHub</a>{% endif %}
       </nav>
       <hr>
     </header>
 
     <main class="mh-content">
-      <div class="mh-profile">
-  <img src="/images/profile.png" alt="Qitong Li" class="mh-avatar" />
-  <div class="mh-bio">
-
-I am an incoming Ph.D. student in Computer Science at Northwestern University, advised by <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/arora-nivedita.html">Nivedita Arora</a> in the <a href="https://embodiedsystem.com/">Embodied Systems Lab</a>. My research lies at the intersection of ubiquitous computing, plant biology, and education, with a focus on building deployable sensing platforms that make biological and environmental processes observable, interpretable, and interactive.
-
-  </div>
-</div>
-
-<h2 id="research">Research</h2>
-
-<p>I design low-cost, bio-integrated sensing systems that bridge physical hardware and data-driven modeling. Recent projects include:</p>
-
-<ul>
-  <li><strong>PhytoBits</strong> a frugal sensing toolkit for monitoring plant physiological rhythms in educational and research settings.</li>
-  <li><strong>OECT sensors</strong> bio-compatible, hydrogel-based bioelectronic devices for in-vivo monitoring of plant metabolic dynamics.</li>
-</ul>
-
-<p>My broader interests span bio-integrated electronics, ubiquitous computing in living environments, and computational tools for scientific learning. My long-term goal is to develop intelligent sensing systems that extend AI beyond screens and into physical, biological environments.</p>
-
-<hr />
-
-<p>Outside of research, I enjoy building interactive systems, mentoring students in STEM, and occasionally performing musical theater.</p>
-
-<h2 id="publications">Publications</h2>
-
-<div class="pub-entry">
-  <span class="pub-title"><a href="https://arxiv.org/abs/2604.26305" target="_blank">Towards a Frugal Photosynthesis Sensing Toolkit for Data-Driven Plant Science Education and Exploration</a></span>
-  <span class="pub-authors"><strong>Qitong Li</strong>, Raj Nileshbhai Dave, Rhema Amanda Phiri, Leo Zhang, Xiaoyu Zheng, Ariana Blake, Livia Ford, Sarah Jones, Susan R. Strickler, Nivedita Arora</span>
-  <span class="pub-meta">
-    <span class="badge">arXiv</span><a href="https://arxiv.org/abs/2604.26305" target="_blank">arXiv:2604.26305</a>
-  </span>
-</div>
-
-<h2 id="contact">Contact</h2>
-
-<p><a href="mailto:qitongli2025@u.northwestern.edu">qitongli2025@u.northwestern.edu</a> · <a href="https://github.com/qitong-li">GitHub</a> · <a href="https://www.linkedin.com/in/qitongliqt">LinkedIn</a></p>
-
+      {{ content }}
     </main>
 
     <footer class="mh-footer">
-      &copy; 2026 Qitong Li &middot; <a href="mailto:qitongli2025@u.northwestern.edu">qitongli2025@u.northwestern.edu</a>
+      &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}{% if site.author.email %} &middot; <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>{% endif %}
     </footer>
 
   </div>

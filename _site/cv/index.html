@@ -1,322 +1,252 @@
 
-
 <!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Qitong Li</title>
+  <meta name="description" content="Qitong Li's academic portfolio">
+  <meta name="author" content="Qitong Li">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png"/>
+  <link rel="icon" type="image/svg+xml" href="http://localhost:4000/images/favicon.svg"/>
+  <link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png" sizes="32x32"/>
+  <link rel="icon" href="/images/favicon.ico"/>
+  <meta name="theme-color" content="#ffffff">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
 
-<meta charset="utf-8">
+    html { scroll-behavior: smooth; }
 
-
-
-<!-- begin SEO -->
-
-
-
-
-
-
-
-
-
-<title>CV - Qitong Li</title>
-
-
-
-<meta name="description" content="Qitong Li’s academic portfolio">
-
-
-
-
-
-
-
-  <link rel="canonical" href="http://localhost:4000/cv/">
-
-
-
-
-
-  
-
-  
-
-
-
-
-
-
-  <script type="application/ld+json">
-    {
-      "@context" : "http://schema.org",
-      "@type" : "Person",
-      "name" : "Qitong Li",
-      "url" : "http://localhost:4000",
-      "sameAs" : null
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      color: #2c2c2c;
+      background: #fff;
+      margin: 0;
+      padding: 0;
     }
-  </script>
 
+    .mh-wrap {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
 
+    /* ── Header ── */
+    .mh-header { margin-bottom: 1.2rem; }
 
+    .mh-name {
+      font-size: 1.9rem;
+      font-weight: 700;
+      margin: 0 0 0.15rem;
+      color: #111;
+      letter-spacing: -0.01em;
+    }
 
+    .mh-name a {
+      color: inherit;
+      text-decoration: none;
+    }
 
+    .mh-name a:hover { text-decoration: underline; }
 
-<!-- end SEO -->
+    .mh-subtitle {
+      color: #666;
+      font-size: 0.93rem;
+      margin: 0 0 0.85rem;
+    }
 
-<!-- Open Graph protocol data (https://ogp.me/), used by social media -->
-<meta property="og:locale" content="en-US">
-<meta property="og:site_name" content="Qitong Li"> 
-<meta property="og:title" content="CV">
+    .mh-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.15rem 0.75rem;
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+    }
 
+    .mh-nav a {
+      color: #555;
+      text-decoration: none;
+    }
 
+    .mh-nav a:hover {
+      color: #111;
+      text-decoration: underline;
+    }
 
-  <meta property="og:url" content="http://localhost:4000/cv/">
+    .mh-nav a.active {
+      color: #111;
+      font-weight: 600;
+    }
 
+    /* ── Dividers ── */
+    hr {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 1.5rem 0;
+    }
 
+    /* ── Page title ── */
+    .mh-page-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #111;
+      margin: 0 0 1.5rem;
+    }
 
+    /* ── Content typography ── */
+    .mh-content h2 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #999;
+      margin: 2rem 0 0.5rem;
+    }
 
+    .mh-content h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #111;
+      margin: 1.1rem 0 0.1rem;
+    }
 
-<!-- end Open Graph protocol -->
+    .mh-content h4 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #333;
+      margin: 0.8rem 0 0.1rem;
+    }
 
-<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Qitong Li Feed">
+    .mh-content p {
+      margin: 0 0 0.75rem;
+    }
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    .mh-content ul {
+      padding-left: 1.4rem;
+      margin: 0.25rem 0 0.75rem;
+    }
 
-<script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-</script>
+    .mh-content ul li {
+      margin-bottom: 0.25rem;
+    }
 
-<!-- For all browsers -->
-<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+    .mh-content a {
+      color: #1a5276;
+      text-decoration: underline;
+    }
 
-    
+    .mh-content a:hover { color: #000; }
 
-<!-- start custom head snippets -->
+    /* ── CV-specific ── */
+    .cv-entry {
+      margin-bottom: 1.4rem;
+    }
 
-<!-- Support for Academicons -->
-<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+    .cv-entry .role {
+      font-weight: 700;
+      color: #111;
+    }
 
-<!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
-<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png"/>
-<link rel="icon" type="image/svg+xml" href="http://localhost:4000/images/favicon.svg"/>
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png" sizes="32x32"/>
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-192x192.png" sizes="192x192"/>
-<link rel="manifest" href="http://localhost:4000/images/manifest.json"/>
-<link rel="icon" href="/images/favicon.ico"/>
-<meta name="theme-color" content="#ffffff"/>
+    .cv-entry .org {
+      color: #555;
+      font-size: 0.92rem;
+    }
 
-<!-- end custom head snippets -->
+    .cv-entry .period {
+      color: #999;
+      font-size: 0.88rem;
+    }
 
-  </head>
+    /* ── Footer ── */
+    .mh-footer {
+      margin-top: 3rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #e0e0e0;
+      font-size: 0.84rem;
+      color: #aaa;
+    }
 
-  <body>
+    .mh-footer a { color: #aaa; text-decoration: none; }
+    .mh-footer a:hover { color: #555; text-decoration: underline; }
 
-    <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
-<![endif]-->
-    
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><span class="navicon"></span></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist ">
-            <a href="http://localhost:4000/">Qitong Li</a>
-          </li>
-          
-            
-            <li class="masthead__menu-item ">
-              <a href="http://localhost:4000/publications/">Publications</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item ">
-              <a href="http://localhost:4000/talks/">Talks</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item selected">
-              <a href="http://localhost:4000/cv/">CV</a>
-            </li>
-          
-          <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
-          </li>
-        </ul>
-        <ul class="hidden-links hidden"></ul>
+    /* ── Responsive ── */
+    @media (max-width: 560px) {
+      .mh-wrap { padding: 2rem 1rem 3rem; }
+      .mh-name { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="mh-wrap">
+
+    <header class="mh-header">
+      <h1 class="mh-name"><a href="http://localhost:4000/">Qitong Li</a></h1>
+      <p class="mh-subtitle">Incoming Ph.D. Student &middot; Computer Science &middot; Northwestern University</p>
+      <nav class="mh-nav">
+        <a href="http://localhost:4000/">Home</a>
+        <a href="http://localhost:4000/#publications">Publications</a>
+        <a href="http://localhost:4000/files/Research_CV.pdf" target="_blank">CV</a>
+        <a href="mailto:qitongli2025@u.northwestern.edu">Email</a>
+        <a href="https://github.com/qitong-li" target="_blank">GitHub</a>
       </nav>
-    </div>
-  </div>
-</div>
+      <hr>
+    </header>
 
+    <main class="mh-content">
+      <h2 id="education">Education</h2>
 
-    
-
-
-
-<div id="main" role="main">
-  
-
-
-  <div class="sidebar sticky">
-  
-
-
-
-<div itemscope itemtype="http://schema.org/Person">
-
-  <div class="author__avatar">
-    
-    	<img src="http://localhost:4000/images/profile.png" class="author__avatar" alt="Qitong Li"  fetchpriority="high" />
-    
-  </div>
-
-  <div class="author__content">
-    <h3 class="author__name">Qitong Li</h3>
-    <p class="author__pronouns">she/her</p>
-    <p class="author__bio">Incoming PhD student in Computer Science at Northwestern University. My research interests lie in embedded sensing systems, biointegrated electronics, and ubiquitous computing, with applications in plant physiology and living systems.</p>
-  </div>
-
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      <!-- Font Awesome icons / Biographic information  -->
-      
-        <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>Evanston, IL</li>
-      
-      
-        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>Northwestern University</li>
-      
-      
-      
-        <li><a href="mailto:qitongli2025@u.northwestern.edu"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
-      
-
-      <!-- Font Awesome and Academicons icons / Academic websites -->
-      
-            
-      
-            
-      
-      
-                              
-      
-      
-      
-      
-      
-
-      <!-- Font Awesome icons / Repositories and software development -->
-      
-            
-            
-      
-        <li><a href="https://github.com/qitong-li"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
-      
-            
-            
-
-      <!-- Font Awesome icons / Social media -->
-              
-      
-      
-            
-      
-                  
-                  
-      
-            
-            
-            
-      
-            
-                  
-            
-      
-            
-            
-      
-              
-      
-                      
-      
-      
-            
-    </ul>
-  </div>
-</div>
-
-  
-  </div>
-
-
-  <div class="archive">
-    
-      <h1 class="page__title">CV</h1>
-    
-    <!--  -->
-<hr />
-<h2 id="education">Education</h2>
-
-<h3 id="northwestern-university">Northwestern University</h3>
-<p><strong>M.S. in Computer Engineering (Thesis Track)</strong><br />
-Sept 2023 - June 2025<br />
+<p><strong>Northwestern University</strong><br />
+M.S. in Computer Engineering (Thesis Track) · Sept 2023 – June 2025<br />
 Advisor: Nivedita Arora<br />
-Focus: Embedded systems, physical computing, plant-environment sensing interfaces, Human-Computer Interaction, and STEM education</p>
+Focus: Embedded systems, physical computing, plant-environment sensing, HCI, and STEM education</p>
 
-<h3 id="beijing-university-of-technology">Beijing University of Technology</h3>
-<p><strong>B.S. in Computer Science</strong><br />
-Aug 2019 - June 2023</p>
+<p><strong>Beijing University of Technology</strong><br />
+B.S. in Computer Science · Aug 2019 – June 2023</p>
 
-<p>Relevant Coursework:<br />
-Data Structures, Algorithms, Machine Learning, Software Engineering, Operating Systems, Computer Architecture, Virtual Reality, VLSI IC Design</p>
+<p>Relevant coursework: Data Structures, Algorithms, Machine Learning, Software Engineering, Operating Systems, Computer Architecture, Virtual Reality, VLSI IC Design</p>
 
 <hr />
 
 <h2 id="research-experience">Research Experience</h2>
 
-<h3 id="research-assistant">Research Assistant</h3>
-<p><strong>VAK Embodied Systems Lab, Northwestern University</strong><br />
-March 2024 - Present</p>
+<p><strong>Research Assistant</strong> · VAK Embodied Systems Lab, Northwestern University · March 2024 – Present</p>
 
-<h4 id="phytobits-a-frugal-toolkit-for-exploring-plant-gas-exchange">PhytoBits: A Frugal Toolkit for Exploring Plant Gas Exchange</h4>
-<p>(Manuscript submitted to ACM IMWUT 2026)</p>
+<p><a href="https://arxiv.org/abs/2604.26305">Towards a Frugal Photosynthesis Sensing Toolkit for Data-Driven Plant Science Education and Exploration</a> — arXiv preprint</p>
 
 <ul>
-  <li>Designed a low-cost embedded sensing system integrating CO₂, humidity, and temperature sensors to observe stomatal rhythms and distinguish photosynthesis types (including CAM behavior).</li>
+  <li>Designed a low-cost embedded sensing system integrating CO₂, humidity, and temperature sensors to observe stomatal rhythms and distinguish photosynthesis types.</li>
   <li>Built microcontroller-based data acquisition pipelines for continuous environmental monitoring and physiological signal visualization.</li>
-  <li>Collected and validated ground-truth physiological data using LI-COR gas-exchange measurements and quantitative assays (transcriptomics and acid titration workflows in progress).</li>
+  <li>Validated system against LI-COR gas-exchange measurements and quantitative assays.</li>
   <li>Developed inquiry-based STEM curriculum modules integrating plant physiology, embedded systems, and computational thinking.</li>
-  <li>Conducted classroom pilot studies to evaluate learning outcomes and improve data literacy.</li>
+  <li>Conducted classroom pilot studies to evaluate learning outcomes and data literacy.</li>
 </ul>
 
-<h4 id="oect-sensors-for-in-vivo-plant-monitoring">OECT Sensors for In-Vivo Plant Monitoring</h4>
+<p><em>OECT Sensors for In-Vivo Plant Monitoring</em></p>
 
 <ul>
-  <li>Developed hydrogel-based organic electrochemical transistor (OECT) sensors using PEDOT:PSS and freeze-thaw cryogels for bio-integrated sensing.</li>
-  <li>Established electrochemical characterization workflows using PalmSens systems, including linear voltammetry and impedance spectroscopy.</li>
-  <li>Investigated material-device interactions, hydration dynamics, and sensor stability for long-term ecological deployments.</li>
+  <li>Developed hydrogel-based organic electrochemical transistor (OECT) sensors using PEDOT:PSS and freeze-thaw cryogels.</li>
+  <li>Established electrochemical characterization workflows using PalmSens systems (linear voltammetry, impedance spectroscopy).</li>
+  <li>Investigated hydration dynamics and sensor stability for long-term ecological deployments.</li>
 </ul>
 
 <hr />
 
 <h2 id="industry-experience">Industry Experience</h2>
 
-<h3 id="software-engineer-intern">Software Engineer Intern</h3>
-<p><strong>HiRain Technologies - Beijing, China</strong><br />
-Mar 2023 - May 2023</p>
+<p><strong>Software Engineer Intern</strong> · HiRain Technologies, Beijing · Mar – May 2023</p>
 
 <ul>
   <li>Optimized Linux real-time process performance for automotive control systems.</li>
-  <li>Monitored CPU occupancy and execution cycles to improve scheduling efficiency.</li>
-  <li>Built Python-based visualization tools to analyze performance bottlenecks.</li>
+  <li>Built Python-based visualization tools to analyze CPU scheduling and performance bottlenecks.</li>
   <li>Authored technical documentation for system architecture and reliability analysis.</li>
 </ul>
 
-<h3 id="software-development-engineer-intern">Software Development Engineer Intern</h3>
-<p><strong>Shanghai Zhizhen Junzhi Technology - Beijing, China</strong><br />
-Jul 2022 - Aug 2022</p>
+<p><strong>Software Development Engineer Intern</strong> · Shanghai Zhizhen Junzhi Technology, Beijing · Jul – Aug 2022</p>
 
 <ul>
   <li>Developed large-scale online data collection and sentiment analysis pipelines.</li>
@@ -328,22 +258,18 @@ Jul 2022 - Aug 2022</p>
 
 <h2 id="projects">Projects</h2>
 
-<h3 id="news2video---ai-driven-journalism-video-generation-platform">News2Video - AI-Driven Journalism Video Generation Platform</h3>
-<p>Jan 2024 - Mar 2024</p>
+<p><strong>News2Video — AI-Driven Journalism Video Generation</strong> · Jan – Mar 2024</p>
 
 <ul>
-  <li>Built an end-to-end system combining Streamlit frontend, backend automation, and AI agents to convert news articles into short-form videos.</li>
-  <li>Integrated AI APIs for script generation, narration, and image synthesis.</li>
-  <li>Automated video editing using MoviePy and OpenCV.</li>
+  <li>Built an end-to-end system combining Streamlit frontend and AI agents to convert news articles into short-form videos.</li>
+  <li>Automated video editing using MoviePy and OpenCV; integrated APIs for script generation, narration, and image synthesis.</li>
 </ul>
 
-<h3 id="smart-desk---cross-device-interaction-workspace">Smart Desk - Cross-Device Interaction Workspace</h3>
-<p>Feb 2022 - Jun 2022</p>
+<p><strong>Smart Desk — Cross-Device Interaction Workspace</strong> · Feb – Jun 2022</p>
 
 <ul>
   <li>Implemented face-recognition-based one-seat activation for cross-device continuity.</li>
-  <li>Developed an Android app enabling gesture-based interaction (mute, volume, media control).</li>
-  <li>Integrated computer vision (YOLOv5), mobile computing, and context-aware sensing.</li>
+  <li>Integrated computer vision (YOLOv5) and gesture-based mobile controls for context-aware sensing.</li>
 </ul>
 
 <hr />
@@ -363,84 +289,31 @@ Jul 2022 - Aug 2022</p>
 <ul>
   <li>Reviewer, ACM CHI (2026)</li>
   <li>Reviewer, ACM TEI (2025)</li>
-  <li>Science Mentor, Pederson-McCormick Boys &amp; Girls Club (2024-Present)</li>
+  <li>Science Mentor, Pederson-McCormick Boys &amp; Girls Club (2024–Present)</li>
 </ul>
 
 <hr />
 
 <h2 id="technical-skills">Technical Skills</h2>
 
-<h3 id="programming-languages">Programming Languages</h3>
-<p>Python, C++, C, Java, JavaScript, SQL, Rust, Verilog</p>
+<p><strong>Languages</strong>   Python, C++, C, Java, JavaScript, SQL, Rust, Verilog</p>
 
-<h3 id="ml--frameworks">ML / Frameworks</h3>
-<p>PyTorch, TensorFlow, Keras, Spring Boot</p>
+<p><strong>ML / Frameworks</strong>   PyTorch, TensorFlow, Keras, Spring Boot</p>
 
-<h3 id="tools--systems">Tools &amp; Systems</h3>
-<p>Git, Docker, AWS, Linux, Android Studio</p>
+<p><strong>Tools</strong>   Git, Docker, AWS, Linux, Android Studio</p>
 
-<h3 id="embedded--hardware">Embedded &amp; Hardware</h3>
-<p>Arduino, ESP32, Micro:bit, Raspberry Pi, Cadence Virtuoso</p>
+<p><strong>Embedded &amp; Hardware</strong>   Arduino, ESP32, Micro:bit, Raspberry Pi, Cadence Virtuoso</p>
+
+    </main>
+
+    <footer class="mh-footer">
+      &copy; 2026 Qitong Li &middot; <a href="mailto:qitongli2025@u.northwestern.edu">qitongli2025@u.northwestern.edu</a>
+    </footer>
 
   </div>
-</div>
 
-
-    <div class="page__footer">
-      <footer>
-        <!-- start custom footer snippets -->
-
-<a href="/sitemap/">Sitemap</a>
-
-<!-- Support for MatJax -->
-<script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
-
-<!-- Support for Mermaid -->
-<script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({startOnLoad:true, theme:'default'});
-    await mermaid.run({querySelector:'code.language-mermaid'});
-</script>
-
-<!-- end custom footer snippets -->
-
-        
-
-
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    
-      <li><strong>Follow:</strong></li>
-    
-    
-      <li><a href="https://github.com/qitong-li"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    
-    
-    
-    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
-    
-  </ul>
-</div>
-
-
-<div class="page__footer-copyright">
-  &copy; 2026 Qitong Li, Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2026-03-10
-</div>
-
-      </footer>
-    </div>
-
-    <script type="module" src="http://localhost:4000/assets/js/main.min.js"></script>
-
-
-
-
-
-
-
-
-  </body>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/polyfill/3.111.0/polyfill.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+</body>
 </html>
-
