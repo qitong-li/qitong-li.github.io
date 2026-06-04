@@ -17,195 +17,317 @@
   <link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png" sizes="32x32"/>
   <link rel="icon" href="/images/favicon.ico"/>
   <meta name="theme-color" content="#ffffff">
+  <!-- Google Fonts: Playfair Display (fancy serif headings) + DM Sans (clean body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <style>
-    *, *::before, *::after { box-sizing: border-box; }
+    /* ── CYM palette: hot pink + teal, refined for a personal academic site ── */
+    :root {
+      --pink:         #c94fa3;   /* CYM hot pink, slightly toned for legibility */
+      --pink-light:   #fdf0f9;   /* blush background */
+      --pink-mid:     #f2d4ea;   /* soft pink for dividers / cards */
+      --teal:         #2ab8b2;   /* CYM bright teal */
+      --teal-dark:    #1e8c87;
+      --teal-light:   #d6f5f4;
+      --text:         #170d14;   /* near-black with a hint of pink */
+      --text-mid:     #5a3d55;
+      --text-light:   #9a7a92;
+      --white:        #ffffff;
+    }
 
+    *, *::before, *::after { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
       font-size: 16px;
-      line-height: 1.75;
-      color: #2c2c2c;
-      background: #fff;
+      line-height: 1.8;
+      color: var(--text);
+      background: var(--pink-light);
       margin: 0;
       padding: 0;
     }
 
+    /* ── Top accent bar ── */
+    body::before {
+      content: '';
+      display: block;
+      height: 5px;
+      background: linear-gradient(90deg, var(--pink) 0%, var(--teal) 100%);
+    }
+
     .mh-wrap {
-      max-width: 740px;
+      max-width: 760px;
       margin: 0 auto;
-      padding: 3rem 1.5rem 5rem;
+      padding: 3rem 1.75rem 5rem;
     }
 
     /* ── Header ── */
-    .mh-header { margin-bottom: 1.2rem; }
+    .mh-header { margin-bottom: 1.4rem; }
 
     .mh-name {
-      font-size: 1.9rem;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.6rem;
       font-weight: 700;
-      margin: 0 0 0.15rem;
-      color: #111;
-      letter-spacing: -0.01em;
+      margin: 0 0 0.2rem;
+      color: var(--pink);
+      letter-spacing: -0.02em;
     }
 
     .mh-subtitle {
-      color: #666;
-      font-size: 0.93rem;
-      margin: 0 0 0.85rem;
+      color: var(--text-mid);
+      font-size: 0.92rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      margin: 0 0 1rem;
     }
 
     .mh-nav {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.15rem 0.75rem;
-      font-size: 0.9rem;
-      margin-bottom: 0.25rem;
+      gap: 0.4rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
     }
 
     .mh-nav a {
-      color: #555;
+      color: var(--white);
+      background: var(--teal);
       text-decoration: none;
+      padding: 0.28em 0.85em;
+      border-radius: 999px;
+      transition: background 0.18s, color 0.18s;
     }
 
     .mh-nav a:hover {
-      color: #111;
-      text-decoration: underline;
+      background: var(--pink);
+      color: var(--white);
     }
 
-    /* ── Dividers ── */
+    /* ── Divider ── */
     hr {
       border: none;
-      border-top: 1px solid #e0e0e0;
-      margin: 1.5rem 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--pink-mid) 0%, var(--teal-light) 100%);
+      margin: 1.75rem 0;
     }
 
     /* ── Profile row ── */
     .mh-profile {
       display: flex;
-      gap: 1.75rem;
+      gap: 2rem;
       align-items: flex-start;
-      margin: 1.25rem 0 1rem;
+      margin: 1.5rem 0 1.25rem;
     }
 
     .mh-avatar {
-      width: 145px;
-      height: 145px;
-      border-radius: 8px;
+      width: 148px;
+      height: 148px;
+      border-radius: 12px;
       object-fit: cover;
       flex-shrink: 0;
+      border: 3px solid var(--pink);
+      box-shadow: 6px 6px 0 var(--pink-mid);
     }
 
     .mh-bio { flex: 1; }
 
     /* ── Content typography ── */
     .mh-content h2 {
-      font-size: 0.8rem;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.35rem;
       font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: #999;
-      margin: 2rem 0 0.5rem;
+      font-style: italic;
+      color: var(--text);
+      margin: 2.25rem 0 0.7rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .mh-content h2::after {
+      content: '';
+      flex: 1;
+      height: 2px;
+      background: linear-gradient(90deg, var(--pink-mid), transparent);
+      border-radius: 1px;
     }
 
     .mh-content p,
     .mh-bio p {
-      margin: 0 0 0.85rem;
+      margin: 0 0 0.9rem;
     }
 
     .mh-content ul,
     .mh-bio ul {
       padding-left: 1.4rem;
-      margin: 0 0 0.85rem;
+      margin: 0 0 0.9rem;
     }
 
     .mh-content ul li,
     .mh-bio ul li {
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.35rem;
     }
 
     .mh-content a,
     .mh-bio a {
-      color: #1a5276;
+      color: var(--teal-dark);
       text-decoration: underline;
+      text-decoration-color: var(--teal-light);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+      transition: color 0.15s, text-decoration-color 0.15s;
     }
 
     .mh-content a:hover,
     .mh-bio a:hover {
-      color: #000;
+      color: var(--pink);
+      text-decoration-color: var(--pink-mid);
+    }
+
+    /* ── News section ── */
+    .news-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 0.9rem;
+    }
+
+    .news-list li {
+      display: flex;
+      gap: 1rem;
+      padding: 0.55rem 0.75rem;
+      margin-bottom: 0.4rem;
+      border-radius: 8px;
+      background: var(--white);
+      border-left: 3px solid var(--pink);
+      font-size: 0.95rem;
+      box-shadow: 0 1px 3px rgba(201,79,163,0.07);
+    }
+
+    .news-date {
+      color: var(--pink);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      min-width: 5.5rem;
+      padding-top: 0.2em;
     }
 
     /* ── Publication entries ── */
     .pub-entry {
-      margin-bottom: 1.25rem;
-      padding-left: 0;
+      margin-bottom: 1.5rem;
     }
 
+    .pub-with-img {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      background: var(--white);
+      border-radius: 12px;
+      padding: 1rem 1.1rem;
+      box-shadow: 0 2px 10px rgba(201,79,163,0.09);
+      border: 1px solid var(--pink-mid);
+    }
+
+    .pub-thumb {
+      width: 115px;
+      height: 82px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+      border: 2px solid var(--pink-mid);
+    }
+
+    .pub-info { flex: 1; }
+
     .pub-title {
-      font-weight: 600;
-      color: #111;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--text);
       display: block;
-      margin-bottom: 0.1rem;
+      margin-bottom: 0.2rem;
+      line-height: 1.45;
+    }
+
+    .pub-title a {
+      color: var(--text) !important;
+      text-decoration-color: var(--pink-mid) !important;
+    }
+
+    .pub-title a:hover {
+      color: var(--pink) !important;
+      text-decoration-color: var(--pink) !important;
     }
 
     .pub-authors {
-      color: #555;
-      font-size: 0.92rem;
+      color: var(--text-mid);
+      font-size: 0.87rem;
       display: block;
+      margin-bottom: 0.3rem;
+      line-height: 1.5;
     }
 
     .pub-authors strong {
-      color: #111;
+      color: var(--text);
+      font-weight: 600;
     }
 
     .pub-meta {
-      font-size: 0.88rem;
-      display: block;
-      margin-top: 0.15rem;
+      font-size: 0.84rem;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin-top: 0.1rem;
     }
 
     .badge {
       display: inline-block;
-      background: #f2f2f2;
-      color: #555;
-      font-size: 0.72rem;
+      background: var(--teal);
+      color: var(--white);
+      font-size: 0.68rem;
       font-weight: 700;
-      padding: 0.1em 0.5em;
-      border-radius: 3px;
-      margin-right: 0.4rem;
-      vertical-align: middle;
-      letter-spacing: 0.02em;
+      padding: 0.15em 0.6em;
+      border-radius: 999px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
     }
 
-    .pub-links {
-      font-size: 0.85rem;
-      margin-top: 0.2rem;
-    }
-
-    .pub-links a {
-      margin-right: 0.6rem;
+    .pub-meta a {
+      color: var(--teal-dark) !important;
     }
 
     /* ── Footer ── */
     .mh-footer {
-      margin-top: 3rem;
-      padding-top: 1.2rem;
-      border-top: 1px solid #e0e0e0;
+      margin-top: 3.5rem;
+      padding: 1.1rem 1.4rem;
+      background: linear-gradient(135deg, var(--pink) 0%, #a33b87 100%);
+      border-radius: 12px;
       font-size: 0.84rem;
-      color: #aaa;
+      color: rgba(255,255,255,0.9);
     }
 
-    .mh-footer a { color: #aaa; text-decoration: none; }
-    .mh-footer a:hover { color: #555; text-decoration: underline; }
+    .mh-footer a { color: var(--white); text-decoration: none; font-weight: 600; }
+    .mh-footer a:hover { text-decoration: underline; }
 
     /* ── Responsive ── */
-    @media (max-width: 560px) {
-      .mh-wrap { padding: 2rem 1rem 3rem; }
+    @media (max-width: 580px) {
+      .mh-wrap { padding: 2rem 1.1rem 3rem; }
       .mh-profile { flex-direction: column; }
-      .mh-avatar { width: 100px; height: 100px; }
-      .mh-name { font-size: 1.5rem; }
+      .mh-avatar { width: 110px; height: 110px; }
+      .mh-name { font-size: 2rem; }
+      .pub-with-img { flex-direction: column; }
+      .pub-thumb { width: 100%; height: 140px; }
+      .mh-nav a { font-size: 0.78rem; }
     }
   </style>
 </head>
@@ -214,13 +336,13 @@
 
     <header class="mh-header">
       <h1 class="mh-name">Qitong Li</h1>
-      <p class="mh-subtitle">Incoming Ph.D. Student &middot; Computer Science &middot; Northwestern University</p>
+      <p class="mh-subtitle">Ubiquitous Computing &middot; Plant Biology  &middot; Education</p>
       <nav class="mh-nav">
         <a href="http://localhost:4000/">Home</a>
-        <a href="#publications">Publications</a>
+        <a href="http://localhost:4000/#publications">Publications</a>
+        <a href="http://localhost:4000/news/">News</a>
         <a href="http://localhost:4000/files/Research_CV.pdf" target="_blank">CV</a>
-        <a href="mailto:qitongli2025@u.northwestern.edu">Email</a>
-        <a href="https://github.com/qitong-li" target="_blank">GitHub</a>
+        <a href="http://localhost:4000/#contact">Contact</a>
       </nav>
       <hr>
     </header>
@@ -246,28 +368,107 @@ I am an incoming Ph.D. student in Computer Science at Northwestern University, a
 
 <p>My broader interests span bio-integrated electronics, ubiquitous computing in living environments, and computational tools for scientific learning. My long-term goal is to develop intelligent sensing systems that extend AI beyond screens and into physical, biological environments.</p>
 
-<hr />
-
-<p>Outside of research, I enjoy building interactive systems, mentoring students in STEM, and occasionally performing musical theater.</p>
-
 <h2 id="publications">Publications</h2>
 
-<div class="pub-entry">
-  <span class="pub-title"><a href="https://arxiv.org/abs/2604.26305" target="_blank">Towards a Frugal Photosynthesis Sensing Toolkit for Data-Driven Plant Science Education and Exploration</a></span>
-  <span class="pub-authors"><strong>Qitong Li</strong>, Raj Nileshbhai Dave, Rhema Amanda Phiri, Leo Zhang, Xiaoyu Zheng, Ariana Blake, Livia Ford, Sarah Jones, Susan R. Strickler, Nivedita Arora</span>
-  <span class="pub-meta">
-    <span class="badge">arXiv</span><a href="https://arxiv.org/abs/2604.26305" target="_blank">arXiv:2604.26305</a>
-  </span>
+<div class="pub-entry pub-with-img">
+  <img class="pub-thumb" src="/images/First_Figure.png" alt="PhytoBits paper thumbnail" />
+  <div class="pub-info">
+    <span class="pub-title"><a href="https://arxiv.org/abs/2604.26305" target="_blank">Towards a Frugal Photosynthesis Sensing Toolkit for Data-Driven Plant Science Education and Exploration</a></span>
+    <span class="pub-authors"><strong>Qitong Li</strong>, Raj Nileshbhai Dave, Rhema Amanda Phiri, Leo Zhang, Xiaoyu Zheng, Ariana Blake, Livia Ford, Sarah Jones, Susan R. Strickler, Nivedita Arora</span>
+    <span class="pub-meta">
+      <span class="badge">arXiv</span><a href="https://arxiv.org/abs/2604.26305" target="_blank">arXiv:2604.26305</a>
+    </span>
+  </div>
 </div>
 
-<h2 id="contact">Contact</h2>
+<h2 id="news">News</h2>
 
-<p><a href="mailto:qitongli2025@u.northwestern.edu">qitongli2025@u.northwestern.edu</a> · <a href="https://github.com/qitong-li">GitHub</a> · <a href="https://www.linkedin.com/in/qitongliqt">LinkedIn</a></p>
+<ul class="news-list">
+<li><span class="news-date">Apr 2026</span> <a href="https://arxiv.org/abs/2604.26305">Paper on PhytoBits posted to arXiv: a frugal sensing toolkit for plant science education.</a></li>
+<li><span class="news-date">Mar 2026</span> Attended TEI (Tangible, Embedded and Embodied Interaction) conference.</li>
+<li><span class="news-date">Mar 2026</span> Admitted to Northwestern University as a Ph.D. student in Computer Science.</li>
+<li><span class="news-date">May 2025</span> <a href="https://www.mccormick.northwestern.edu/electrical-computer/news-events/news/articles/2025/2025-ece-annual-award-winners.html">Awarded the Best Computer Engineering MS Thesis Award at Northwestern's McCormick School of Engineering</a></li>
+<li><span class="news-date">Mar 2024</span> Joined the VAK Embodied Systems Lab.</li>
+<li><span class="news-date">Sep 2023</span> Joined Northwestern University as an MS student in MSCE.</li>
+</ul>
+<p style="font-size:0.88rem; margin-top:-0.3rem;"><a href="/news/">See all news →</a></p>
+
+<h2 id="more">More</h2>
+
+<p>Beyond research, I am passionate about service and community engagement. I mentor students in STEM, volunteer in science education initiatives, and build interactive systems that make technology accessible. I also love musicals, movies and concerts, whether attending performances, helping backstage with productions, or simply enjoying them as a creative outlet.</p>
+
+<style>
+.fun-strip-wrap {
+  overflow: hidden;
+  margin: 1.1rem 0 1.6rem;
+  border-radius: 10px;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+.fun-strip {
+  display: flex;
+  gap: 0.6rem;
+  width: max-content;
+  animation: fun-scroll 28s linear infinite;
+}
+.fun-strip:hover { animation-play-state: paused; }
+.fun-strip img {
+  height: 160px;
+  width: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid var(--pink-mid);
+  display: block;
+}
+@keyframes fun-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+</style>
+
+<div class="fun-strip-wrap">
+  <div class="fun-strip">
+    <img src="/images/fun-1.jpg" alt="photo 1" />
+    <img src="/images/fun-2.jpg" alt="photo 2" />
+    <img src="/images/fun-3.jpg" alt="photo 3" />
+    <img src="/images/fun-4.jpg" alt="photo 4" />
+    <img src="/images/fun-5.jpg" alt="photo 5" />
+    <img src="/images/fun-6.jpg" alt="photo 6" />
+    <!-- duplicate set for seamless loop -->
+    <img src="/images/fun-1.jpg" alt="photo 1" />
+    <img src="/images/fun-2.jpg" alt="photo 2" />
+    <img src="/images/fun-3.jpg" alt="photo 3" />
+    <img src="/images/fun-4.jpg" alt="photo 4" />
+    <img src="/images/fun-5.jpg" alt="photo 5" />
+    <img src="/images/fun-6.jpg" alt="photo 6" />
+  </div>
+</div>
+
+<h2 id="contact">Catact</h2>
+
+<p><a href="mailto:qitongli2025@u.northwestern.edu">qitongli2025@u.northwestern.edu</a> · <a href="https://scholar.google.com/citations?user=hwf5-gUAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://github.com/qitong-li">GitHub</a> · <a href="https://www.linkedin.com/in/qitongliqt">LinkedIn</a></p>
+
+<div class="fun-strip-wrap">
+  <div class="fun-strip">
+    <img src="/images/cat-1.jpg" alt="cat 1" />
+    <img src="/images/cat-2.jpg" alt="cat 2" />
+    <img src="/images/cat-3.jpg" alt="cat 3" />
+    <img src="/images/cat-4.jpg" alt="cat 4" />
+    <img src="/images/cat-5.jpg" alt="cat 5" />
+    <!-- duplicate set for seamless loop -->
+    <img src="/images/cat-1.jpg" alt="cat 1" />
+    <img src="/images/cat-2.jpg" alt="cat 2" />
+    <img src="/images/cat-3.jpg" alt="cat 3" />
+    <img src="/images/cat-4.jpg" alt="cat 4" />
+    <img src="/images/cat-5.jpg" alt="cat 5" />
+  </div>
+</div>
 
     </main>
 
     <footer class="mh-footer">
-      &copy; 2026 Qitong Li &middot; <a href="mailto:qitongli2025@u.northwestern.edu">qitongli2025@u.northwestern.edu</a>
+      &copy; 2026 Qitong Li
     </footer>
 
   </div>

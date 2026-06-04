@@ -1,22 +1,20 @@
----
----
-{% include base_path %}
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}</title>
-  <meta name="description" content="{{ site.author.bio | default: site.description }}">
-  <meta name="author" content="{{ site.author.name }}">
-  <meta property="og:title" content="{{ site.title }}">
-  <meta property="og:description" content="{{ site.description }}">
+  <title>Qitong Li</title>
+  <meta name="description" content="Incoming PhD student in Computer Science at Northwestern University. My research interests lie in embedded sensing systems, biointegrated electronics, and ubiquitous computing, with applications in plant physiology and living systems.">
+  <meta name="author" content="Qitong Li">
+  <meta property="og:title" content="Qitong Li">
+  <meta property="og:description" content="Qitong Li's academic portfolio">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:url" content="http://localhost:4000">
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>
-  <link rel="icon" type="image/svg+xml" href="{{ base_path }}/images/favicon.svg"/>
-  <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-32x32.png" sizes="32x32"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png"/>
+  <link rel="icon" type="image/svg+xml" href="http://localhost:4000/images/favicon.svg"/>
+  <link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png" sizes="32x32"/>
   <link rel="icon" href="/images/favicon.ico"/>
   <meta name="theme-color" content="#ffffff">
   <!-- Google Fonts: Playfair Display (fancy serif headings) + DM Sans (clean body) -->
@@ -337,24 +335,36 @@
   <div class="mh-wrap">
 
     <header class="mh-header">
-      <h1 class="mh-name">{{ site.author.name }}</h1>
+      <h1 class="mh-name">Qitong Li</h1>
       <p class="mh-subtitle">Ubiquitous Computing &middot; Plant Biology  &middot; Education</p>
       <nav class="mh-nav">
-        <a href="{{ base_path }}/">Home</a>
-        <a href="{{ base_path }}/#publications">Publications</a>
-        <a href="{{ base_path }}/news/">News</a>
-        <a href="{{ base_path }}/files/Research_CV.pdf" target="_blank">CV</a>
-        <a href="{{ base_path }}/#contact">Contact</a>
+        <a href="http://localhost:4000/">Home</a>
+        <a href="http://localhost:4000/#publications">Publications</a>
+        <a href="http://localhost:4000/news/">News</a>
+        <a href="http://localhost:4000/files/Research_CV.pdf" target="_blank">CV</a>
+        <a href="http://localhost:4000/#contact">Contact</a>
       </nav>
       <hr>
     </header>
 
     <main class="mh-content">
-      {{ content }}
+      <h2 id="news">News</h2>
+
+<ul class="news-list">
+<li><span class="news-date">Apr 2026</span> <a href="https://arxiv.org/abs/2604.26305">Paper on PhytoBits posted to arXiv: a frugal sensing toolkit for plant science education.</a></li>
+<li><span class="news-date">Mar 2026</span> Attended TEI (Tangible, Embedded and Embodied Interaction) conference.</li>
+<li><span class="news-date">Mar 2026</span> Admitted to Northwestern University as a Ph.D. student in Computer Science.</li>
+<li><span class="news-date">May 2025</span> <a href="https://www.mccormick.northwestern.edu/electrical-computer/news-events/news/articles/2025/2025-ece-annual-award-winners.html">Awarded the Best Computer Engineering MS Thesis Award at Northwestern's McCormick School of Engineering</a></li>
+<li><span class="news-date">Mar 2024</span> Joined the VAK Embodied Systems Lab.</li>
+<li><span class="news-date">Sep 2023</span> Joined Northwestern University as an MS student in MSCE.</li>
+</ul>
+
+<p style="font-size:0.88rem;"><a href="/">← Back home</a></p>
+
     </main>
 
     <footer class="mh-footer">
-      &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+      &copy; 2026 Qitong Li
     </footer>
 
   </div>

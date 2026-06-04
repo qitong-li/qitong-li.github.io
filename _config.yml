@@ -35,7 +35,7 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=hwf5-gUAAAAJ&hl=en"
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : # "https://orcid.org/yourorcidurl"
@@ -221,6 +221,9 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
+  news:
+    output: true
+    permalink: /news/:name/
   teaching:
     output: true
     permalink: /:collection/:path/
@@ -290,6 +293,12 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _news
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: news-item
 
 
 # Sass/SCSS
