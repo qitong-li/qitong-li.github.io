@@ -100,9 +100,8 @@ Beyond research, I am passionate about service and community engagement. I mento
 
 ## Catact {#contact}
 
-Office: L470 Technological Institute, 2145 Sheridan Road, Evanston, IL 60208
-
-[qitongli2025@u.northwestern.edu](mailto:qitongli2025@u.northwestern.edu) &middot; [Google Scholar](https://scholar.google.com/citations?user=hwf5-gUAAAAJ&hl=en) &middot; [GitHub](https://github.com/qitong-li) &middot; [LinkedIn](https://www.linkedin.com/in/qitongliqt)
+Office: L470, Technological Institute, 2145 Sheridan Road, Evanston, IL 60208
+[qitongli2025 \[at\] u.northwestern.edu](mailto:qitongli2025@u.northwestern.edu) &middot; [Google Scholar](https://scholar.google.com/citations?user=hwf5-gUAAAAJ&hl=en) &middot; [GitHub](https://github.com/qitong-li) &middot; [LinkedIn](https://www.linkedin.com/in/qitongliqt)
 
 <div class="fun-strip-wrap">
   <div class="fun-strip">
