@@ -21,7 +21,7 @@ I am an incoming Ph.D. student in Computer Science at Northwestern University, a
 I design low-cost, bio-integrated sensing systems that bridge physical hardware and data-driven modeling. Recent projects include:
 
 - **PhytoBits** a frugal sensing toolkit for monitoring plant physiological rhythms in educational and research settings.
-- **OECT sensors** bio-compatible, hydrogel-based bioelectronic devices for in-vivo monitoring of plant metabolic dynamics.
+- **CAM Scope** bio-compatible, hydrogel-based organic electrochemical transistor(OECT) device for in-vivo monitoring of plant metabolic dynamics.
 
 My broader interests span bio-integrated electronics, ubiquitous computing in living environments, and computational tools for scientific learning. My long-term goal is to develop intelligent sensing systems that extend AI beyond screens and into physical, biological environments.
 
