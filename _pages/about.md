@@ -110,10 +110,12 @@ Office: L470, Technological Institute, 2145 Sheridan Road, Evanston, IL 60208
     <img src="/images/cat-2.jpg" alt="cat 2">
     <img src="/images/cat-3.jpg" alt="cat 3">
     <img src="/images/cat-4.jpg" alt="cat 4">
+    <img src="/images/cat-5.jpg" alt="cat 5">
     <!-- duplicate set for seamless loop -->
     <img src="/images/cat-1.jpg" alt="cat 1">
     <img src="/images/cat-2.jpg" alt="cat 2">
     <img src="/images/cat-3.jpg" alt="cat 3">
     <img src="/images/cat-4.jpg" alt="cat 4">
+    <img src="/images/cat-5.jpg" alt="cat 5">
   </div>
 </div>
