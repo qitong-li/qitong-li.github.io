@@ -4,12 +4,13 @@
   featured: true
 
 - date: "Mar 2026"
-  text: "Attended TEI (Tangible, Embedded and Embodied Interaction) conference."
+  text: "Attended TEI 2026 (Tangible, Embedded and Embodied Interaction) conference, University of Chicago."
+  link: "/news/2026-03-tei-conference/"
   featured: true
 
 - date: "Mar 2026"
   text: "Admitted to Northwestern University as a Ph.D. student in Computer Science."
-  featured: true
+  featured: false
 
 - date: "May 2025"
   text: "Awarded the Best Computer Engineering MS Thesis Award at Northwestern's McCormick School of Engineering"
@@ -18,8 +19,8 @@
 
 - date: "Mar 2024"
   text: "Joined the VAK Embodied Systems Lab."
-  featured: true
+  featured: false
 
 - date: "Sep 2023"
   text: "Joined Northwestern University as an MS student in MSCE."
-  featured: true
+  featured: false
