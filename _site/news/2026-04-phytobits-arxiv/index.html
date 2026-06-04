@@ -1,0 +1,237 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhytoBits Paper on arXiv - Qitong Li</title>
+  <meta name="description" content="PhytoBits Paper on arXiv">
+  <meta name="author" content="Qitong Li">
+  <meta property="og:title" content="PhytoBits Paper on arXiv">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/news/2026-04-phytobits-arxiv/">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png"/>
+  <link rel="icon" type="image/svg+xml" href="http://localhost:4000/images/favicon.svg"/>
+  <link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png" sizes="32x32"/>
+  <link rel="icon" href="/images/favicon.ico"/>
+  <meta name="theme-color" content="#ffffff">
+  <!-- Google Fonts: Playfair Display (fancy serif headings) + DM Sans (clean body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+  <style>
+    :root {
+      --pink:         #c94fa3;
+      --pink-light:   #fdf0f9;
+      --pink-mid:     #f2d4ea;
+      --teal:         #2ab8b2;
+      --teal-dark:    #1e8c87;
+      --teal-light:   #d6f5f4;
+      --text:         #170d14;
+      --text-mid:     #5a3d55;
+      --text-light:   #9a7a92;
+      --white:        #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--text);
+      background: var(--pink-light);
+      margin: 0;
+      padding: 0;
+    }
+
+    body::before {
+      content: '';
+      display: block;
+      height: 5px;
+      background: linear-gradient(90deg, var(--pink) 0%, var(--teal) 100%);
+    }
+
+    .mh-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 1.75rem 5rem;
+    }
+
+    .mh-header { margin-bottom: 1.4rem; }
+
+    .mh-name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.6rem;
+      font-weight: 700;
+      margin: 0 0 0.2rem;
+      color: var(--pink);
+      letter-spacing: -0.02em;
+    }
+
+    .mh-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
+    }
+
+    .mh-nav a {
+      color: var(--white);
+      background: var(--teal);
+      text-decoration: none;
+      padding: 0.28em 0.85em;
+      border-radius: 999px;
+      transition: background 0.18s, color 0.18s;
+    }
+
+    .mh-nav a:hover {
+      background: var(--pink);
+      color: var(--white);
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background: linear-gradient(90deg, var(--pink-mid) 0%, var(--teal-light) 100%);
+      margin: 1.75rem 0;
+    }
+
+    .mh-content {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 10px rgba(201,79,163,0.09);
+      border: 1px solid var(--pink-mid);
+    }
+
+    .mh-content h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 0 0 0.5rem;
+    }
+
+    .news-item-date {
+      color: var(--pink);
+      font-size: 0.87rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    .mh-content p,
+    .mh-content ul {
+      margin: 0 0 0.9rem;
+    }
+
+    .mh-content a {
+      color: var(--teal-dark);
+      text-decoration: underline;
+      text-decoration-color: var(--teal-light);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+      transition: color 0.15s, text-decoration-color 0.15s;
+    }
+
+    .mh-content a:hover {
+      color: var(--pink);
+      text-decoration-color: var(--pink-mid);
+    }
+
+    .mh-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      border: 2px solid var(--pink-mid);
+    }
+
+    .mh-footer {
+      margin-top: 3.5rem;
+      padding: 1.1rem 1.4rem;
+      background: linear-gradient(135deg, var(--pink) 0%, #a33b87 100%);
+      border-radius: 12px;
+      font-size: 0.84rem;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .mh-footer a { color: var(--white); text-decoration: none; font-weight: 600; }
+    .mh-footer a:hover { text-decoration: underline; }
+
+    .back-link {
+      font-size: 0.92rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .back-link a {
+      color: var(--teal-dark);
+      text-decoration: none;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 580px) {
+      .mh-wrap { padding: 2rem 1.1rem 3rem; }
+      .mh-name { font-size: 2rem; }
+      .mh-content { padding: 1.5rem; }
+      .mh-content h1 { font-size: 1.75rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="mh-wrap">
+
+    <header class="mh-header">
+      <h1 class="mh-name">Qitong Li</h1>
+      <nav class="mh-nav">
+        <a href="http://localhost:4000/">Home</a>
+        <a href="http://localhost:4000/news/">News</a>
+        <a href="http://localhost:4000/#publications">Publications</a>
+        <a href="http://localhost:4000/files/Research_CV.pdf" target="_blank">CV</a>
+        <a href="http://localhost:4000/#contact">Contact</a>
+      </nav>
+      <hr>
+    </header>
+
+    <main>
+      <div class="back-link">
+        <a href="http://localhost:4000/news/">← Back to news</a>
+      </div>
+
+      <article class="mh-content">
+        <h1>PhytoBits Paper on arXiv</h1>
+        <span class="news-item-date">April 01, 2026</span>
+        <p>Paper on PhytoBits posted to arXiv: a frugal sensing toolkit for plant science education.</p>
+
+<p><strong>Read the paper:</strong> <a href="https://arxiv.org/abs/2604.26305">arXiv:2604.26305</a></p>
+
+<p><img src="/images/First_Figure.png" alt="PhytoBits" /></p>
+
+      </article>
+    </main>
+
+    <footer class="mh-footer">
+      &copy; 2026 Qitong Li
+    </footer>
+
+  </div>
+
+  <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+</body>
+</html>

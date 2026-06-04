@@ -321,6 +321,37 @@
     .mh-footer a { color: var(--white); text-decoration: none; font-weight: 600; }
     .mh-footer a:hover { text-decoration: underline; }
 
+    /* ── Side decorations ── */
+    .deco-side {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: calc((100vw - 760px) / 2 - 1.75rem);
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      opacity: 0;
+    }
+
+    .deco-side i {
+      font-size: 1.5rem;
+      display: block;
+    }
+
+    @media (min-width: 1060px) {
+      .deco-side { opacity: 1; }
+    }
+
+    .deco-left  { left: 0; }
+    .deco-right { right: 0; }
+
+    .deco-side i:nth-child(odd)  { color: var(--pink);      opacity: 0.18; transform: rotate(-12deg); }
+    .deco-side i:nth-child(even) { color: var(--teal);      opacity: 0.18; transform: rotate(10deg);  }
+    .deco-side i:nth-child(3n)   { font-size: 1.1rem; opacity: 0.13; transform: rotate(-6deg); }
+    .deco-side i:nth-child(5n)   { font-size: 1.9rem; opacity: 0.14; transform: rotate(18deg); }
+
     /* ── Responsive ── */
     @media (max-width: 580px) {
       .mh-wrap { padding: 2rem 1.1rem 3rem; }
@@ -334,6 +365,31 @@
   </style>
 </head>
 <body>
+
+  <!-- left decoration strip -->
+  <div class="deco-side deco-left" aria-hidden="true">
+    <i class="fa-solid fa-leaf"></i>
+    <i class="fa-solid fa-microchip"></i>
+    <i class="fa-solid fa-seedling"></i>
+    <i class="fa-solid fa-wifi"></i>
+    <i class="fa-solid fa-dna"></i>
+    <i class="fa-solid fa-graduation-cap"></i>
+    <i class="fa-solid fa-flask"></i>
+    <i class="fa-solid fa-atom"></i>
+  </div>
+
+  <!-- right decoration strip -->
+  <div class="deco-side deco-right" aria-hidden="true">
+    <i class="fa-solid fa-atom"></i>
+    <i class="fa-solid fa-seedling"></i>
+    <i class="fa-solid fa-wifi"></i>
+    <i class="fa-solid fa-leaf"></i>
+    <i class="fa-solid fa-graduation-cap"></i>
+    <i class="fa-solid fa-microchip"></i>
+    <i class="fa-solid fa-dna"></i>
+    <i class="fa-solid fa-flask"></i>
+  </div>
+
   <div class="mh-wrap">
 
     <header class="mh-header">
