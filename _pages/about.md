@@ -98,7 +98,7 @@ Beyond research, I am passionate about service and community engagement. I mento
   </div>
 </div>
 
-## Catact 🐱 {#contact}
+## Cat·act 🐱 {#contact}
 
 Office: L470, Technological Institute, 2145 Sheridan Road, Evanston, IL 60208
 
