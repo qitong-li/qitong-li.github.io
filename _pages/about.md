@@ -11,7 +11,7 @@ redirect_from:
   <img src="/images/profile.png" alt="Qitong Li" class="mh-avatar">
   <div class="mh-bio">
 
-I am an incoming Ph.D. student in Computer Science at Northwestern University, advised by <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/arora-nivedita.html">Nivedita Arora</a> in the <a href="https://embodiedsystem.com/">Embodied Systems Lab</a>. My research lies at the intersection of ubiquitous computing, plant biology, and education, with a focus on building deployable sensing platforms that make biological and environmental processes observable, interpretable, and interactive.
+I am an incoming Ph.D. student in Computer Science at Northwestern University, advised by Prof. <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/arora-nivedita.html">Nivedita Arora</a> in the <a href="https://embodiedsystem.com/">Embodied Systems Lab</a>. My research lies at the intersection of ubiquitous computing, plant biology, and education, with a focus on building deployable sensing platforms that make biological and environmental processes observable, interpretable, and interactive.
 
   </div>
 </div>
@@ -98,7 +98,7 @@ Beyond research, I am passionate about service and community engagement. I mento
   </div>
 </div>
 
-## Catact {#contact}
+## Catact 🐱 {#contact}
 
 Office: L470, Technological Institute, 2145 Sheridan Road, Evanston, IL 60208
 
