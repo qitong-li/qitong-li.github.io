@@ -1,3 +1,12 @@
+- date: "Nov 2026"
+  text: "Paper on LeafBreath posted to arXiv: low-cost, autonomous photosynthesis monitoring on living leaves."
+  link: "https://arxiv.org/abs/2611.13387"
+  featured: true
+
+- date: "Sep 2026"
+  text: "Started my Ph.D. in Computer Science at Northwestern University."
+  featured: true
+
 - date: "Apr 2026"
   text: "Paper on PhytoBits posted to arXiv: a frugal sensing toolkit for plant science education."
   link: "https://arxiv.org/abs/2604.26305"

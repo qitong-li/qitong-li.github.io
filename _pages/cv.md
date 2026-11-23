@@ -9,6 +9,10 @@ redirect_from:
 ## Education
 
 **Northwestern University**  
+Ph.D. in Computer Science &middot; Sept 2026 – Present  
+Advisor: Nivedita Arora
+
+**Northwestern University**  
 M.S. in Computer Engineering (Thesis Track) &middot; Sept 2023 – June 2025  
 Advisor: Nivedita Arora  
 Focus: Embedded systems, physical computing, plant-environment sensing, HCI, and STEM education
@@ -23,6 +27,13 @@ Relevant coursework: Data Structures, Algorithms, Machine Learning, Software Eng
 ## Research Experience
 
 **Research Assistant** &middot; VAK Embodied Systems Lab, Northwestern University &middot; March 2024 – Present
+
+[Towards Accessible, Autonomous Photosynthesis Monitoring on Living Leaves](https://arxiv.org/abs/2611.13387) — arXiv preprint (LeafBreath)
+
+- Built a leaf-attached chamber (about USD 62 each) that periodically closes to measure CO₂ drawdown and reopens to refresh the air, enabling multi-day photosynthesis monitoring without pumps or gas tubing.
+- Validated measurements against a research-grade gas exchange instrument (CIRAS-4) across 29 sessions (R² = 0.90).
+- Deployed six chambers on one plant for nine days through drought and rewatering, capturing leaf-to-leaf differences that a whole-plant measurement would hide.
+- Informed the design with a formative study of 13 plant biology researchers.
 
 [Towards a Frugal Photosynthesis Sensing Toolkit for Data-Driven Plant Science Education and Exploration](https://arxiv.org/abs/2604.26305) — arXiv preprint
 

@@ -11,7 +11,7 @@ redirect_from:
   <img src="/images/profile.png" alt="Qitong Li" class="mh-avatar">
   <div class="mh-bio">
 
-I am an incoming Ph.D. student in Computer Science at Northwestern University, advised by Prof. <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/arora-nivedita.html">Nivedita Arora</a> in the <a href="https://embodiedsystem.com/">Embodied Systems Lab</a>. My research lies at the intersection of ubiquitous computing, plant biology, and education, with a focus on building deployable sensing platforms that make biological and environmental processes observable, interpretable, and interactive.
+I am a first-year Ph.D. student in Computer Science at Northwestern University, advised by Prof. <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/arora-nivedita.html">Nivedita Arora</a> in the <a href="https://embodiedsystem.com/">Embodied Systems Lab</a>. My research lies at the intersection of ubiquitous computing, plant biology, and education, with a focus on building deployable sensing platforms that make biological and environmental processes observable, interpretable, and interactive.
 
   </div>
 </div>
@@ -20,6 +20,7 @@ I am an incoming Ph.D. student in Computer Science at Northwestern University, a
 
 I design low-cost, bio-integrated sensing systems that bridge physical hardware and data-driven modeling. Recent projects include:
 
+- **LeafBreath** a low-cost, leaf-attached chamber for autonomous, multi-day photosynthesis monitoring on individual living leaves.
 - **PhytoBits** a frugal sensing toolkit for monitoring plant physiological rhythms in educational and research settings.
 - **CAM Scope** bio-compatible, hydrogel-based organic electrochemical transistor(OECT) device for in-vivo monitoring of plant metabolic dynamics.
 
@@ -27,6 +28,17 @@ My broader interests span bio-integrated electronics, ubiquitous computing in li
 
 
 ## Publications
+
+<div class="pub-entry pub-with-img">
+  <img class="pub-thumb" src="/images/LeafBreath_thumb.png" alt="LeafBreath paper thumbnail">
+  <div class="pub-info">
+    <span class="pub-title"><a href="https://arxiv.org/abs/2611.13387" target="_blank">Towards Accessible, Autonomous Photosynthesis Monitoring on Living Leaves</a></span>
+    <span class="pub-authors"><strong>Qitong Li</strong>, Xiaoyu Zheng, Xuanang Chen, Julia Wang, Raj Nileshbhai Dave, Dayanara Chavez, Nirvik Prakash Iyer, Nivedita Arora</span>
+    <span class="pub-meta">
+      <span class="badge">arXiv</span><a href="https://arxiv.org/abs/2611.13387" target="_blank">arXiv:2611.13387</a>
+    </span>
+  </div>
+</div>
 
 <div class="pub-entry pub-with-img">
   <img class="pub-thumb" src="/images/First_Figure.png" alt="PhytoBits paper thumbnail">
